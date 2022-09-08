@@ -1,0 +1,362 @@
+:root {
+	--bg: #100720;
+	--highlight1: #fa2fb5;
+	--highlight2: #ffc23c;
+	--text-color: #ffffff;
+	--font: 'Roboto', sans-serif;
+	--title-size: 2em;
+	--content-size: 1.2em;
+	--border-radius: 20pt;
+	--border-width: 2pt;
+	--short-transition: 0.1s;
+	--long-transition: 0.2s;
+	--hover-scale: 1.04;
+	--project-width: 350pt;
+	--project-height: 500pt;
+	--project-demo-height: calc(var(--project-width) * 9 / 16);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: var(--bg);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.navigation {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 4vh;
+}
+
+.navigation-link {
+	color: white;
+	font-family: var(--font);
+	font-size: var(--content-size);
+	transition: var(--long-transition);
+}
+
+.navigation-link:hover {
+	color: var(--highlight1);
+}
+
+.profile {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.description-container {
+	display: flex;
+	flex-direction: column;
+	padding: 1%;
+	min-width: 200pt;
+	margin-left: 10pt;
+	margin-right: 10pt;
+	margin-bottom: 20pt;
+}
+
+.name {
+	margin: 0;
+	font-family: var(--font);
+	font-size: 4em;
+	color: var(--text-color);
+}
+
+.description {
+	margin: 0;
+	font-family: var(--font);
+	font-size: 1.2em;
+	color: var(--highlight1);
+	margin-top: 2pt;
+}
+
+.pfp {
+	margin-left: 10pt;
+	margin-right: 10pt;
+	object-fit: cover;
+	object-position: 40%;
+	width: 250pt;
+	height: 250pt;
+	border-radius: 100%;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: row;
+	font-size: var(--title-size);
+	margin-top: 20pt;
+}
+
+.contacts > * {
+	margin-right: 20pt;
+}
+
+.contacts-button {
+	color: var(--text-color);
+	transition: var(--long-transition);
+}
+
+.contacts-button:hover {
+	color: var(--highlight2)
+}
+
+.about {
+	max-width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 70vw;
+}
+
+.about-title {
+	text-align: center;
+	font-size: var(--title-size);
+	font-family: var(--font);
+	color: white;
+	margin: 0;
+	width: 100%;
+}
+
+.about-content {
+	font-size: var(--content-size);
+	font-family: var(--font);
+	color: white;
+	margin-top: 10pt;
+}
+
+.projects {
+	display: flex;
+	max-width: 100vw;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 5vw;
+}
+
+.projects-header {
+	font-size: var(--title-size);
+	font-family: var(--font);
+	color: white;
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.project {
+	width: var(--project-width);
+	height: var(--project-height);
+	background-color: white;
+	border-radius: var(--border-radius);
+	border-width: var(--border-width);
+	border-style: solid;
+	border-color: white;
+	transform: scale(1);
+	transition: var(--short-transition);
+	margin-right: 8pt;
+	margin-left: 8pt;
+	margin-top: 8pt;
+	margin-bottom: 8pt;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.project:hover {
+	border-color: var(--highlight2);
+	transform: scale(var(--hover-scale));
+}
+
+.project-title {
+	font-family: var(--font);
+	font-size: var(--title-size);
+	text-align: center;
+	color: black;
+	margin-top: 5pt;
+	margin-bottom: 0;
+}
+
+.project-tech {
+	font-family: var(--font);
+	font-size: 1em;
+	color: black;
+	margin-top: 1pt;
+	margin-bottom: 0;
+}
+
+.project-description {
+	font-family: var(--font);
+	font-size: 1.1em;
+	color: black;
+	margin-top: 5pt;
+	margin-bottom: 0;
+	margin-left: 10pt;
+	margin-right: 10pt;
+}
+
+.project-divider {
+	margin-top: auto;
+	margin-bottom: 0;
+	width: calc(100% - var(--border-width));
+	border: 1px solid #f0f0f0;
+	margin-left: 0;
+}
+
+.project-links {
+	height: 40pt;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	border-bottom-right-radius: inherit;
+	border-bottom-left-radius: inherit;
+	overflow: hidden;
+}
+
+.project-link-href {
+	flex-grow: 1;
+	height: 100%;
+}
+
+.project-link-button {
+	height: 100%;
+	width: 100%;
+	border: none;
+	transition: var(--long-transition);
+	background-color: white;
+	color: black;
+}
+
+.project-link-button:hover {
+	background-color: var(--highlight2);
+	color: white;
+}
+
+.project-link-button-span {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-github-icon {
+	font-size: 2em;
+}
+
+.project-website-icon {
+	font-size: 1.8em;
+}
+
+.project-link-text {
+	margin: 0;
+	margin-left: 4pt;
+	font-family: var(--font);
+	font-size: 1.5em;
+}
+
+.vultr-demo {
+	border-top-right-radius: inherit;
+	border-top-left-radius: inherit;
+	margin: 0;
+	padding: 0;
+	width: var(--project-width);
+	height: var(--project-demo-height);
+}
+
+.bluebubbles-demo {
+	border-top-right-radius: inherit;
+	border-top-left-radius: inherit;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+	width: var(--project-width);
+	height: var(--project-demo-height);
+}
+
+.contact-me {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: white;
+	width: var(--project-width);
+	border-radius: var(--border-radius);
+	border-width: var(--border-width);
+	border-style: solid;
+	border-color: white;
+	transform: scale(1);
+	transition: var(--short-transition);
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.contact-box:hover {
+	border-color: var(--highlight2);
+	transform: scale(var(--hover-scale)); 
+}
+
+.contact-title {
+	color: black;
+	font-family: var(--font);
+	font-size: var(--title-size);
+}
+
+.contact-link {
+	width: 80%;
+	height: 40pt;
+	margin-bottom: 20pt;
+}
+
+.contact-button {
+	font-family: var(--font);
+	font-size: var(--content-size);
+	color: black;
+	border: none;
+	border-radius: 10pt;
+	transition: var(--long-transition);
+	width: 100%;
+	height: 100%;
+	background-color: #e0e0e0;
+}
+
+.contact-button:hover {
+	color: white;
+	background-color: var(--highlight2);
+}

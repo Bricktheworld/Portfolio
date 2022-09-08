@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Brandon Shihabi - Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css" rel="stylesheet">
+
+	<!--Font awesome-->
+	<script src="https://kit.fontawesome.com/fa6c64feb5.js" crossorigin="anonymous"></script>
+
+	<!--Roboto-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navigation">
+		<a class="navigation-link" href="#profile">Profile</a>
+		<a class="navigation-link" href="#about">About</a>
+		<a class="navigation-link" href="#projects">Projects</a>
+		<a class="navigation-link" href="#contact">Contact</a>
+	</nav>
+	<section id="profile" class="profile">
+		<div class="description-container">
+			<h1 class="name">Brandon Shihabi</h1>
+			<p class="description">Firmware Engineer | App Developer | Game Engine Programmer</p>
+			<div class="contacts">
+				<a target="_blank" rel="noopener noreferrer" href="https://github.com/Bricktheworld/">
+					<i class="fa-brands fa-github contacts-button"></i>
+				</a>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brandon-shihabi/">
+					<i class="fa-brands fa-linkedin contacts-button"></i>
+				</a>
+			</div>
+		</div>
+		<img src="res/pfp.jpg" class="pfp" />
+	</section>
+
+	<section id="about" class="about">
+		<div class="about-container">
+			<h1 class="about-title">About</h1>
+			<p class="about-content">Hi! I'm a Software Engineer who's been programming for over eight years now. I am
+				currently a freshman at UCLA studying Computer Science and Engineering. I specialize mainly in low-level
+				programming, specifically Game Engines and Embedded Systems.
+			</p>
+			<p class="about-content">
+				Professionally, I worked as a Firmware Engineer at a security camera startup called Rhombus Systems and
+				developed a brand new device to test and debug cameras over PoE. I developed a firmware from scratch based on
+				Linux to run on a small 580 MHz CPU that could boot up in seconds and was less than 8 mb in size.
+			</p>
+			<p class="about-content">
+				In 2020, I created an app with the help of some other developers to allow for iMessage texts to be sent and
+				received on non-Apple devices. I worked on the Android side of things
+			</p>
+			<p class="about-content">
+				Computer Graphics and Game Engine development is what I enjoy most! Real-time 3D rendering is super interesting,
+				and seeing how modern AAA games have to run multiple render passes with thousands of objects all in under 16 ms
+				is truly fascinating to me.
+			</p>
+		</div>
+	</section>
+
+	<section id="projects" class="projects">
+		<h1 class="projects-header">Projects</h1>
+		<div class="projects-container">
+			<div class="project">
+				<video class="vultr-demo" autoplay muted loop>
+					<source src="https://github.com/Bricktheworld/VultrCore/raw/master/documentation/vultr_demo.mp4"
+						type="video/mp4">
+				</video>
+				<h1 class="project-title">Custom Game Engine</h1>
+				<p class="project-tech">C++ | Vulkan</p>
+				<p class="project-description">Vultr is a custom 3D Game Engine built from scratch. It uses a Vulkan rendering
+					backend with an editor that uses ImGui. It supports run-time reflection in the editor, gameplay hot-reloading,
+					ECS gameplay system, optimized asset imports, and a full material system. The engine is capable of rendering
+					PBR graphics with shaders for roughness, metalness, normal, and albedo. The meshes, textures, shaders, and all
+					other assets are loaded using separate thread submission queues to maximize performance. It also uses a
+					minimal subset of the C++ STL, opting for a custom template library where possible.</p>
+				<hr class="project-divider">
+				</hr>
+				<div class="project-links">
+					<a target="_blank" rel="noopener noreferrer" class="project-link-href"
+						href="https://github.com/Bricktheworld/VultrCore">
+						<button class="project-link-button">
+							<span class="project-link-button-span">
+								<i class="fa-brands fa-github project-github-icon"></i>
+								<p class="project-link-text">Source</p>
+							</span>
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="project">
+				<iframe class="bluebubbles-demo" allow="fullscreen"
+					src="https://www.youtube.com/embed/LDRuWXGOu0U?autoplay=1&mute=1&loop=1&start=30">
+				</iframe>
+				<h1 class="project-title">BlueBubbles</h1>
+				<p class="project-tech">Flutter | Android</p>
+				<p class="project-description">BlueBubbles is an iMessage solution for Android, Linux, and Windows that allows
+					you to send and receive Apple iMessage texts from non-Apple devices. I started this open-source project in
+					2020 with some other developers and the app now has over 9,000 active users. I worked on the Android client
+					and designed the Flutter app to communicate with our Mac server. The video playing above was created
+					(voluntarily, we did not ask) by the Youtube channel HowToMen to showcase our app.</p>
+				<hr class="project-divider">
+				</hr>
+				<div class="project-links">
+					<a target="_blank" rel="noopener noreferrer" class="project-link-href"
+						href="https://github.com/BlueBubblesApp">
+						<button class="project-link-button">
+							<span class="project-link-button-span">
+								<i class="fa-brands fa-github project-github-icon"></i>
+								<p class="project-link-text">Source</p>
+							</span>
+						</button>
+					</a>
+					<a target="_blank" rel="noopener noreferrer" class="project-link-href" href="https://bluebubbles.app">
+						<button class="project-link-button">
+							<span class="project-link-button-span">
+								<i class="fa-solid fa-link project-website-icon"></i>
+								<p class="project-link-text">Website</p>
+							</span>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="contact-me">
+		<div class="contact-box">
+			<h1 class="contact-title">Contact</h1>
+			<a target="_blank" rel="noopener noreferrer" class="contact-link" href="mailto:brandon.shihabi@gmail.com">
+				<button class="contact-button">Email: brandon.shihabi@gmail.com</button>
+			</a>
+			<a target="_blank" rel="noopener noreferrer" class="contact-link"
+				href="https://www.linkedin.com/in/brandon-shihabi/">
+				<button class="contact-button">Linkedin</button>
+			</a>
+		</div>
+	</section>
+</body>
+
+</html>
