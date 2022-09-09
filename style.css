@@ -165,6 +165,7 @@ a {
 .projects-header {
 	font-size: var(--title-size);
 	font-family: var(--font);
+	text-align: center;
 	color: white;
 }
 
