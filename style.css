@@ -11,7 +11,7 @@
 	--short-transition: 0.1s;
 	--long-transition: 0.2s;
 	--hover-scale: 1.04;
-	--project-width: 350pt;
+	--project-width: min(350pt, 94vw);
 	--project-height: 500pt;
 	--project-demo-height: calc(var(--project-width) * 9 / 16);
 }
@@ -35,8 +35,9 @@ a {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-top: 4vh;
+	margin-top: 2vh;
 }
 
 .navigation-link {
@@ -44,6 +45,9 @@ a {
 	font-family: var(--font);
 	font-size: var(--content-size);
 	transition: var(--long-transition);
+	margin-top: 2vh;
+	margin-left: 5pt;
+	margin-right: 5pt;
 }
 
 .navigation-link:hover {
@@ -51,7 +55,7 @@ a {
 }
 
 .profile {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -179,7 +183,7 @@ a {
 
 .project {
 	width: var(--project-width);
-	height: var(--project-height);
+	min-height: var(--project-height);
 	background-color: white;
 	border-radius: var(--border-radius);
 	border-width: var(--border-width);
