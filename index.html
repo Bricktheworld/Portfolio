@@ -20,7 +20,8 @@
 	<nav class="navigation">
 		<a class="navigation-link" href="#profile">Profile</a>
 		<a class="navigation-link" href="#about">About</a>
-		<a class="navigation-link" href="#projects">Projects</a>
+		<a class="navigation-link" href="#professional">Professional Experience</a>
+		<a class="navigation-link" href="#projects">Personal Projects</a>
 		<a class="navigation-link" href="#contact">Contact</a>
 	</nav>
 	<section id="profile" class="profile">
@@ -63,11 +64,97 @@
 		</div>
 	</section>
 
-	<section id="projects" class="projects">
-		<h1 class="projects-header">Projects</h1>
+	<section id="professional" class="projects">
+		<h1 class="projects-header">Professional Experience at Rhombus Systems</h1>
+		<div class="about-container">
+			<p class="about-content"><a target="_blank" rel="noopener noreferrer" class="paragraph-url"
+					href="https://www.rhombus.com/">Rhombus Systems</a> is an enterprise security camera and sensor startup
+				focused on a cloud-based platform. They provide AI services to help monitor video streams automatically,
+				including things like human, motion, and even suspicious activity detection. And if customers feel there are
+				more features they want to add to their cameras, Rhombus's public facing API (which is also used internally) can
+				be used to extend functionality.</p>
+			<p class="about-content">I interned as a Software Engineer at Rhombus back in the summer of 2021. There, I worked
+				on
+				examples for how to use the Rhombus API, and all of the work I did is publicly facing on their <a
+					target="_blank" rel="noopener noreferrer" class="paragraph-url"
+					href="https://github.com/RhombusSystems">Github repo.</a>
+			</p>
+			<p class="about-content">Shortly after my internship finished at the start of August, Rhombus reached out to me to
+				become a part-time Software Engineer while I was still in school, and full-time during the summer after I
+				graduated. While at Rhombus, I designed a new device to help troubleshooting camera installations. I was also
+				featured in an <a target="_blank" rel="noopener noreferrer" class="paragraph-url"
+					href="https://www.linkedin.com/feed/update/urn:li:activity:6970796102270824448">employee spotlight!</a>
+			</p>
+		</div>
 		<div class="projects-container">
 			<div class="project">
-				<video class="vultr-demo" autoplay muted loop>
+				<video class="vultr-demo" controls autoplay muted loop>
+					<source src="res/ethernet_tester_demo.mp4" type="video/mp4">
+				</video>
+				<h1 class="project-title">Ethernet Tester</h1>
+				<p class="project-tech">C | Linux | U-Boot</p>
+				<p class="project-description">At Rhombus Systems, we often found that many of the same issues would always
+					occur on site when installing our cameras, mainly related to firewall issues. As a Firmware Engineer at
+					Rhombus, I lead the design of a new device that would test for issues over a PoE connection and would show
+					the user what tests, if any, failed. This device ran a custom firmware I built based around Linux. I designed
+					an in-house graphics driver to show the UI on the LCD display, and ran a suite of tests to check for
+					connectivity, MITM attacks, and more.</p>
+				<hr class="project-divider">
+				</hr>
+				<div class="project-links">
+					<a target="_blank" rel="noopener noreferrer" class="project-link-href" href="https://www.rhombus.com/">
+						<button class="project-link-button">
+							<span class="project-link-button-span">
+								<i class="fa-solid fa-link project-website-icon"></i>
+								<p class="project-link-text">Website</p>
+							</span>
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="project">
+				<!-- <iframe class="bluebubbles-demo" allow="fullscreen" -->
+				<!-- 	src="https://www.youtube.com/embed/LDRuWXGOu0U?autoplay=1&mute=1&loop=1&start=30"> -->
+				<!-- </iframe> -->
+				<img class="api-demo" src="res/rhombus-symbol.webp">
+				<h1 class="project-title">API Examples</h1>
+				<p class="project-tech">Typescript | Python | REST</p>
+				<p class="project-description">As an intern at Rhombus Systems, I wrote a set of code examples of how to use the
+					Rhombus API. I wrote examples in both Typescript and Python that would do things such as classifying objects
+					in real-time using Tensorflow or stitching video clips between different cameras to follow a person. I also
+					designed a set of shell scripts to generate typed libraries using Swagger Codegen so that developers could
+					make API requests with the safety of having a proper type system.
+					<hr class="project-divider">
+					</hr>
+				<div class="project-links">
+					<a target="_blank" rel="noopener noreferrer" class="project-link-href"
+						href="https://github.com/RhombusSystems/rhombus-api-examples-python">
+						<button class="project-link-button">
+							<span class="project-link-button-span">
+								<i class="fa-brands fa-github project-github-icon"></i>
+								<p class="project-link-text">Source</p>
+							</span>
+						</button>
+					</a>
+					<a target="_blank" rel="noopener noreferrer" class="project-link-href"
+						href="https://apidocs.rhombussystems.com/">
+						<button class="project-link-button">
+							<span class="project-link-button-span">
+								<i class="fa-solid fa-link project-website-icon"></i>
+								<p class="project-link-text">Website</p>
+							</span>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="projects" class="projects">
+		<h1 class="projects-header">Personal Projects</h1>
+		<div class="projects-container">
+			<div class="project">
+				<video class="vultr-demo" controls autoplay muted loop>
 					<source src="https://github.com/Bricktheworld/VultrCore/raw/master/documentation/vultr_demo.mp4"
 						type="video/mp4">
 				</video>

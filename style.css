@@ -142,10 +142,15 @@ a {
 }
 
 .about-content {
+	width: 100%;
 	font-size: var(--content-size);
 	font-family: var(--font);
 	color: white;
 	margin-top: 10pt;
+}
+
+.paragraph-url {
+	color: var(--highlight2);
 }
 
 .projects {
@@ -282,6 +287,12 @@ a {
 	margin-left: 4pt;
 	font-family: var(--font);
 	font-size: 1.5em;
+}
+
+.api-demo {
+	margin-top: 20pt;
+	margin-bottom: 20pt;
+	height: calc(var(--project-demo-height) - 40pt);
 }
 
 .vultr-demo {
