@@ -43,23 +43,26 @@
 	<section id="about" class="about">
 		<div class="about-container">
 			<h1 class="about-title">About</h1>
-			<p class="about-content">Hi! I'm a Software Engineer who's been programming for over eight years now. I am
-				currently a freshman at UCLA studying Computer Science and Engineering. I specialize mainly in low-level
-				programming, specifically Game Engines and Embedded Systems.
+			<p class="about-content">
+				Hi! I'm a Software Engineer who's been programming for over eight years. I am currently a freshman at UCLA
+				studying Computer Science and Engineering. I specialize mainly in low-level programming, specifically Game
+				Engines and Embedded Systems.
 			</p>
 			<p class="about-content">
 				Professionally, I worked as a Firmware Engineer at a security camera startup called Rhombus Systems and
-				developed a brand new device to test and debug cameras over PoE. I developed a firmware from scratch based on
-				Linux to run on a small 580 MHz CPU that could boot up in seconds and was less than 8 mb in size.
+				developed a brand new device to test and debug cameras over PoE. I created a firmware from scratch based on
+				Linux to run on a small 580 MHz CPU that could boot up in seconds and was less than 8 Mb in size.
 			</p>
 			<p class="about-content">
 				In 2020, I created an app with the help of some other developers to allow for iMessage texts to be sent and
-				received on non-Apple devices. I worked on the Android side of things
+				received on non-Apple devices. I worked on the Android side of things to create a client in Flutter that could
+				communicate with our Mac server to send and receive texts. The client also had to manage an SQLite database of
+				messages synchronized with the server.
 			</p>
 			<p class="about-content">
-				Computer Graphics and Game Engine development is what I enjoy most! Real-time 3D rendering is super interesting,
-				and seeing how modern AAA games have to run multiple render passes with thousands of objects all in under 16 ms
-				is truly fascinating to me.
+				Computer Graphics and Game Engine development are what I enjoy most. Real-time 3D rendering is super
+				interesting, and seeing how modern AAA games have to run multiple render passes with thousands of objects all in
+				under 16 ms is fascinating to me!
 			</p>
 		</div>
 	</section>
@@ -67,22 +70,23 @@
 	<section id="professional" class="projects">
 		<h1 class="projects-header">Professional Experience at Rhombus Systems</h1>
 		<div class="about-container">
-			<p class="about-content"><a target="_blank" rel="noopener noreferrer" class="paragraph-url"
-					href="https://www.rhombus.com/">Rhombus Systems</a> is an enterprise security camera and sensor startup
-				focused on a cloud-based platform. They provide AI services to help monitor video streams automatically,
-				including things like human, motion, and even suspicious activity detection. And if customers feel there are
-				more features they want to add to their cameras, Rhombus's public facing API (which is also used internally) can
-				be used to extend functionality.</p>
-			<p class="about-content">I interned as a Software Engineer at Rhombus back in the summer of 2021. There, I worked
-				on
-				examples for how to use the Rhombus API, and all of the work I did is publicly facing on their <a
-					target="_blank" rel="noopener noreferrer" class="paragraph-url"
-					href="https://github.com/RhombusSystems">Github repo.</a>
+			<p class="about-content">
+				<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.rhombus.com/">Rhombus
+					Systems</a> is an enterprise security camera startup focused on a cloud-based platform. They provide AI
+				services to help monitor video streams automatically. And if customers feel there are more features they want to
+				add to their cameras, Rhombus's public-facing API (which is also used internally) can be used to extend
+				functionality.
 			</p>
-			<p class="about-content">Shortly after my internship finished at the start of August, Rhombus reached out to me to
-				become a part-time Software Engineer while I was still in school, and full-time during the summer after I
-				graduated. While at Rhombus, I designed a new device to help troubleshooting camera installations. I was also
-				featured in an <a target="_blank" rel="noopener noreferrer" class="paragraph-url"
+			<p class="about-content">
+				I interned as a Software Engineer at Rhombus in the summer of 2021. There, I worked on examples for how to use
+				the Rhombus API, and all of the work I did is publicly facing on their <a target="_blank"
+					rel="noopener noreferrer" class="paragraph-url" href="https://github.com/RhombusSystems">Github repo.</a>
+			</p>
+			<p class="about-content">
+				Shortly after my internship finished at the start of August, Rhombus reached out to me to become a part-time
+				Software Engineer while I was still in school and full-time during the summer after I graduated. While at
+				Rhombus, I designed a new device to help troubleshoot camera installations. I was also featured in an
+				<a target="_blank" rel="noopener noreferrer" class="paragraph-url"
 					href="https://www.linkedin.com/feed/update/urn:li:activity:6970796102270824448">employee spotlight!</a>
 			</p>
 		</div>
@@ -93,12 +97,13 @@
 				</video>
 				<h1 class="project-title">Ethernet Tester</h1>
 				<p class="project-tech">C | Linux | U-Boot</p>
-				<p class="project-description">At Rhombus Systems, we often found that many of the same issues would always
-					occur on site when installing our cameras, mainly related to firewall issues. As a Firmware Engineer at
-					Rhombus, I lead the design of a new device that would test for issues over a PoE connection and would show
-					the user what tests, if any, failed. This device ran a custom firmware I built based around Linux. I designed
-					an in-house graphics driver to show the UI on the LCD display, and ran a suite of tests to check for
-					connectivity, MITM attacks, and more.</p>
+				<p class="project-description">
+					At Rhombus Systems, we often found that many of the same issues would always occur on-site when installing our
+					cameras, mainly related to firewall issues. As a Firmware Engineer at Rhombus, I led the design of a new
+					device that would test for issues over a PoE connection and show the user what tests, if any, failed. This
+					device ran a custom firmware I built based on Linux. I designed an in-house graphics driver to show the UI on
+					the LCD display and ran a suite of tests to check for connectivity, MITM attacks, and more.
+				</p>
 				<hr class="project-divider">
 				</hr>
 				<div class="project-links">
@@ -119,11 +124,12 @@
 				<img class="api-demo" src="res/rhombus-symbol.webp">
 				<h1 class="project-title">API Examples</h1>
 				<p class="project-tech">Typescript | Python | REST</p>
-				<p class="project-description">As an intern at Rhombus Systems, I wrote a set of code examples of how to use the
-					Rhombus API. I wrote examples in both Typescript and Python that would do things such as classifying objects
-					in real-time using Tensorflow or stitching video clips between different cameras to follow a person. I also
-					designed a set of shell scripts to generate typed libraries using Swagger Codegen so that developers could
-					make API requests with the safety of having a proper type system.
+				<p class="project-description">
+					As an intern at Rhombus Systems, I wrote a set of code examples of how to use the Rhombus API. I wrote
+					examples in both Typescript and Python that would do things such as classifying objects in real-time using
+					Tensorflow or stitching video clips between different cameras to follow a person. I also designed a set of
+					shell scripts to generate typed libraries using Swagger Codegen so that developers could make API requests
+					with the safety of having a proper type system.
 					<hr class="project-divider">
 					</hr>
 				<div class="project-links">
@@ -160,12 +166,14 @@
 				</video>
 				<h1 class="project-title">Custom Game Engine</h1>
 				<p class="project-tech">C++ | Vulkan</p>
-				<p class="project-description">Vultr is a custom 3D Game Engine built from scratch. It uses a Vulkan rendering
-					backend with an editor that uses ImGui. It supports run-time reflection in the editor, gameplay hot-reloading,
-					ECS gameplay system, optimized asset imports, and a full material system. The engine is capable of rendering
-					PBR graphics with shaders for roughness, metalness, normal, and albedo. The meshes, textures, shaders, and all
-					other assets are loaded using separate thread submission queues to maximize performance. It also uses a
-					minimal subset of the C++ STL, opting for a custom template library where possible.</p>
+				<p class="project-description">
+					Vultr is a custom 3D Game Engine built from scratch. It uses a Vulkan rendering backend with an editor that
+					uses ImGui. It supports run-time reflection in the editor, gameplay hot-reloading, an ECS gameplay system,
+					optimized asset imports, and a complete material system. The engine can render PBR graphics with shaders for
+					roughness, metalness, normal, and albedo. The meshes, textures, shaders, and all other assets are loaded using
+					separate thread submission queues to maximize performance. It also uses a minimal subset of the C++ STL,
+					opting for a custom template library where possible.
+				</p>
 				<hr class="project-divider">
 				</hr>
 				<div class="project-links">
@@ -186,11 +194,13 @@
 				</iframe>
 				<h1 class="project-title">BlueBubbles</h1>
 				<p class="project-tech">Flutter | Android</p>
-				<p class="project-description">BlueBubbles is an iMessage solution for Android, Linux, and Windows that allows
-					you to send and receive Apple iMessage texts from non-Apple devices. I started this open-source project in
-					2020 with some other developers and the app now has over 9,000 active users. I worked on the Android client
-					and designed the Flutter app to communicate with our Mac server. The video playing above was created
-					(voluntarily, we did not ask) by the Youtube channel HowToMen to showcase our app.</p>
+				<p class="project-description">
+					BlueBubbles is an iMessage solution for Android, Linux, and Windows that allows you to send and receive Apple
+					iMessage texts from non-Apple devices. I started this open-source project in 2020 with some other developers,
+					and the app now has over 9,000 active users. I worked on the Android client and designed the Flutter app to
+					communicate with our Mac server. The video playing above was created (voluntarily, we did not ask) by the
+					Youtube channel HowToMen to showcase our app.
+				</p>
 				<hr class="project-divider">
 				</hr>
 				<div class="project-links">
