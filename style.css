@@ -4,7 +4,7 @@
 	--highlight2: #ffc23c;
 	--text-color: #ffffff;
 	--font: 'Roboto', sans-serif;
-	--title-size: 2em;
+	--title-size: 1.7em;
 	--content-size: 1.2em;
 	--border-radius: 20pt;
 	--border-width: 2pt;
@@ -55,7 +55,8 @@ a {
 }
 
 .profile {
-	min-height: 100vh;
+	margin-top: 40pt;
+	min-height: 35vh;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -99,6 +100,17 @@ a {
 	border-radius: 100%;
 }
 
+.demo-gif {
+	margin-left: 10pt;
+	margin-right: 10pt;
+	margin-bottom: 10pt;
+	object-fit: cover;
+	object-position: 40%;
+	width: min(450pt, 90vw);
+	height: min(250pt, 50vw);
+	border-radius: 3.5pt;
+}
+
 .contacts {
 	display: flex;
 	flex-direction: row;
@@ -119,30 +131,13 @@ a {
 	color: var(--highlight2)
 }
 
-.about {
-	max-width: 100vw;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-}
-
 .about-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 70vw;
-}
-
-.about-title {
-	text-align: center;
-	font-size: var(--title-size);
-	font-family: var(--font);
-	color: white;
-	margin: 0;
-	width: 100%;
+	max-width: 500pt;
+	padding: 10pt;
+	padding-top: 50pt;
 }
 
 .about-content {
@@ -155,6 +150,71 @@ a {
 
 .paragraph-url {
 	color: var(--highlight2);
+}
+
+.experience {
+	margin-top: 40pt;
+	min-height: 35vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.experience-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: start;
+	justify-content: center;
+	padding: 30pt;
+}
+
+
+.experience-description-container {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	min-width: 200pt;
+	margin: 0;
+	margin-left: 10pt;
+	margin-right: 10pt;
+	margin-bottom: 20pt;
+}
+
+.experience-description {
+	font-family: var(--font);
+	font-size: 1.1em;
+	color: white;
+	margin-top: 5pt;
+	margin-bottom: 0;
+	max-width: 500pt;
+}
+
+.experience-header {
+	margin: 0;
+	margin-top: 5pt;
+	font-size: var(--title-size);
+	font-family: var(--font);
+	text-align: left;
+	color: white;
+}
+
+.experience-subheader {
+	font-size: 1.0em;
+	font-family: var(--font);
+	text-align: left;
+	color: var(--highlight1);
+}
+
+.section-header {
+	font-size: 2.0em;
+	font-family: var(--font);
+	text-align: center;
+	color: white;
 }
 
 .projects {
