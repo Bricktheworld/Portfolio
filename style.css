@@ -33,12 +33,16 @@ a {
 }
 
 .navigation {
+	position: fixed;
+	top: 0;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-top: 2vh;
+	background-color: var(--bg);
+	padding-bottom: 15pt;
+	box-shadow: 0 0.25mm 1mm #1A1C1D;
 }
 
 .navigation-link {
@@ -46,7 +50,7 @@ a {
 	font-family: var(--font);
 	font-size: var(--content-size);
 	transition: var(--long-transition);
-	margin-top: 2vh;
+	margin-top: 15pt;
 	margin-left: 5pt;
 	margin-right: 5pt;
 }
@@ -56,7 +60,7 @@ a {
 }
 
 .profile {
-	margin-top: 40pt;
+	margin-top: 60pt;
 	min-height: 35vh;
 	display: flex;
 	flex-direction: row;
