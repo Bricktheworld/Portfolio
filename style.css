@@ -4,7 +4,8 @@
 	--highlight2: #96cbfe;
 	--highlight3: #f7a145;
 	--text-color: #ffffff;
-	--font: 'Roboto', sans-serif;
+	--font: 'Roboto Mono', monospace;
+	--font-var-width: 'Roboto', sans-serif;
 	--title-size: 1.7em;
 	--content-size: 1.2em;
 	--border-radius: 20pt;
