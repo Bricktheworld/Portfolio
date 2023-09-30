@@ -1,7 +1,8 @@
 :root {
-	--bg: #100720;
-	--highlight1: #fa2fb5;
-	--highlight2: #ffc23c;
+	--bg: #242933;
+	--highlight1: #dad085;
+	--highlight2: #96cbfe;
+	--highlight3: #f7a145;
 	--text-color: #ffffff;
 	--font: 'Roboto', sans-serif;
 	--title-size: 1.7em;
@@ -84,6 +85,7 @@ a {
 
 .description {
 	margin: 0;
+	margin-bottom: 10pt;
 	font-family: var(--font);
 	font-size: 1.2em;
 	color: var(--highlight1);
@@ -115,7 +117,8 @@ a {
 	display: flex;
 	flex-direction: row;
 	font-size: var(--title-size);
-	margin-top: 20pt;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
 }
 
 .contacts > * {
@@ -150,6 +153,11 @@ a {
 
 .paragraph-url {
 	color: var(--highlight2);
+	text-decoration: underline;
+}
+
+.paragraph-url:hover {
+	color: var(--highlight3);
 }
 
 .experience {
@@ -208,6 +216,19 @@ a {
 	font-family: var(--font);
 	text-align: left;
 	color: var(--highlight1);
+}
+
+.experience-url {
+	font-size: 1.2em;
+	font-family: var(--font);
+	text-align: left;
+	text-decoration: underline;
+	color: var(--highlight2);
+	margin-right: 30pt;
+}
+
+.experience-url:hover {
+	color: var(--highlight3);
 }
 
 .section-header {
