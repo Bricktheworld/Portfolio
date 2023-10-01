@@ -6,7 +6,7 @@
 	--text-color: #ffffff;
 	--font: 'Roboto', sans-serif;
 	--title-size: 1.7em;
-	--content-size: 1.2em;
+	--content-size: 1.1em;
 	--border-radius: 20pt;
 	--border-width: 2pt;
 	--short-transition: 0.1s;
@@ -59,7 +59,7 @@ a {
 	color: var(--highlight1);
 }
 
-.profile {
+.about {
 	margin-top: 60pt;
 	min-height: 35vh;
 	display: flex;
@@ -199,7 +199,7 @@ a {
 
 .experience-description {
 	font-family: var(--font);
-	font-size: 1.1em;
+	font-size: 1em;
 	color: white;
 	margin-top: 5pt;
 	margin-bottom: 0;

@@ -19,11 +19,11 @@
 
 <body>
 	<nav class="navigation">
-		<a class="navigation-link" href="#profile">PROFILE</a>
+		<a class="navigation-link" href="#about">ABOUT</a>
 		<a class="navigation-link" href="#experience">EXPERIENCE</a>
 		<a class="navigation-link" href="#projects">PROJECTS</a>
 	</nav>
-	<section id="profile" class="profile">
+	<section id="about" class="about">
 		<img src="res/pfp.jpg" class="pfp" />
 		<div class="description-container">
 			<h1 class="name">Brandon Shihabi</h1>
@@ -64,7 +64,9 @@
 			<img src="res/spiderman_2.gif" class="demo-gif" />
 			<div class="experience-description-container">
 				<h1 class="experience-header">Insomniac Games | Core Rendering Intern</h1>
-				<h2 class="experience-subheader">JUN. 2023 - SEP. 2023 | Managed by Al Hastings (Chief Engine Architect/Co-Founder)</h1>
+				<h2 class="experience-subheader">JUN. 2023 - SEP. 2023 | Managed by 
+					<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.linkedin.com/in/alex-hastings-6572878">Al Hastings (Chief Engine Architect/Co-Founder)</a>
+				</h1>
 				<p class="experience-description">
 					I worked on the core rendering team to help maintain and improve our proprietary Game Engine on 
 					<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://insomniac.games/game/marvels-spider-man-2/">Marvel's Spider-Man 2</a>.
@@ -82,7 +84,9 @@
 			<img src="res/rhombus_et1.gif" class="demo-gif" />
 			<div class="experience-description-container">
 				<h1 class="experience-header">Rhombus Systems | Firmware Engineer</h1>
-				<h2 class="experience-subheader">JUN. 2021 - SEP. 2022 | Managed by Drew Gallatin (Director of Engineering)</h1>
+				<h2 class="experience-subheader">JUN. 2021 - SEP. 2022 | Managed by 
+					<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.linkedin.com/in/andrew-gallatin-986800125/">Drew Gallatin (Director of Engineering)</a>
+				</h1>
 				<p class="experience-description">
 					<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.rhombus.com/">Rhombus Systems</a>
 					is an enterprise security camera startup focused on a cloud-based platform. They provide AI services to help monitor 
@@ -129,12 +133,14 @@
 					<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://github.com/Bricktheworld/VultrCore/blob/master/README.md">Writeup</a>
 				</div>
 				<p class="experience-description">
-					Vultr is a custom 3D Game Engine I built from scratch for Linux. It uses a Vulkan rendering backend with an editor that
-					uses ImGui. It supports run-time type reflection in the editor, gameplay hot-reloading, an ECS system, optimized
-					asset imports, and a complete material system. The engine can render PBR graphics with support for roughness,
-					metalness, normal, and albedo textures. The meshes, textures, shaders, and all other assets are loaded using
-					separate thread submission queues to maximize performance. It also uses a minimal subset of the C++ STL,
-					opting for a custom template library where possible.
+					Vultr is a custom 3D Game Engine I built from scratch for Linux with a Vulkan rendering backend. I designed an editor for 
+					the engine using ImGui that supports editing materials, assets, the entity hierarchy, levels, and exposed gameplay structs using
+					my own macro-based runtime type reflection. All changes in the editor are serialized and deserialized into a YAML format
+					on save. The engine uses my own ECS architecture and supports hot-reloading gameplay code through DLLs (including changes to
+					component structs), optimized asset imports into a custom runtime file format, and a complete material system that works with
+					custom shaders. The engine can render PBR graphics supporting roughness, metalness, normal, and albedo textures. The meshes,
+					textures, shaders, and all other assets are loaded using separate thread submission queues to maximize performance. It also uses a
+					minimal subset of the C++ STL, opting for a custom template library where possible.
 				</p>
 			</div>
 		</div>
