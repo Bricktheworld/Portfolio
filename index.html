@@ -2,172 +2,215 @@
 <html lang="en">
 
 <head>
-	<title>Brandon Shihabi - Portfolio</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="style.css" rel="stylesheet">
+<title>Brandon Shihabi - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
 
-	<!--Font awesome-->
-	<script src="https://kit.fontawesome.com/fa6c64feb5.js" crossorigin="anonymous"></script>
+<!--Font awesome-->
+<script src="https://kit.fontawesome.com/fa6c64feb5.js" crossorigin="anonymous"></script>
 
-	<!--Roboto-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<!--Roboto-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<nav class="navigation">
-		<a class="navigation-link" href="#about">ABOUT</a>
-		<a class="navigation-link" href="#experience">EXPERIENCE</a>
-		<a class="navigation-link" href="#projects">PROJECTS</a>
-	</nav>
-	<section id="about" class="about">
-		<img src="res/pfp.jpg" class="pfp" />
-		<div class="description-container">
-			<h1 class="name">Brandon Shihabi</h1>
-			<p class="description">Game Engine Programmer | Rendering Engineer</p>
-			<div class="contacts">
-				<a target="_blank" rel="noopener noreferrer" href="https://github.com/Bricktheworld/">
-					<i class="fa-brands fa-github contacts-button"></i>
-				</a>
-				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brandon-shihabi/">
-					<i class="fa-brands fa-linkedin contacts-button"></i>
-				</a>
-				<a target="_blank" rel="noopener noreferrer" href="mailto:brandon.shihabi@gmail.com">
-					<i class="fa-solid fa-envelope contacts-button"></i>
-				</a>
-			</div>
-			<a target="_blank" rel="noopener noreferrer" class="experience-url" href="mailto:brandon.shihabi@gmail.com">brandon.shihabi@gmail.com</a>
+<nav class="navigation">
+	<a class="navigation-link" href="#about">ABOUT</a>
+	<a class="navigation-link" href="#experience">EXPERIENCE</a>
+	<a class="navigation-link" href="#projects">PROJECTS</a>
+</nav>
+<section id="about" class="about">
+	<img src="res/pfp.jpg" class="pfp" />
+	<div class="description-container">
+		<h1 class="name">Brandon Shihabi</h1>
+		<p class="description">Rendering Engineer | Game Engine Programmer</p>
+		<div class="contacts">
+			<a target="_blank" rel="noopener noreferrer" href="https://github.com/Bricktheworld/">
+				<i class="fa-brands fa-github contacts-button"></i>
+			</a>
+			<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brandon-shihabi/">
+				<i class="fa-brands fa-linkedin contacts-button"></i>
+			</a>
+			<a target="_blank" rel="noopener noreferrer" href="mailto:brandon.shihabi@gmail.com">
+				<i class="fa-solid fa-envelope contacts-button"></i>
+			</a>
 		</div>
-		<div class="about-container">
-			<p class="about-content">
-				Hi, my name is Brandon Shihabi! I'm a Software Engineer specializing in low-level programming, particularly Game Engines and Rendering.
-				I am currently studying Computer Science and Engineering at UCLA and have professional experience working on AAA Games and Graphics tech.
-			</p>
-			<p class="about-content">
-				This summer, I worked as the Core Rendering Intern at <a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://insomniac.games/">Insomniac Games</a> 
-				and helped ship Marvel's Spider-Man 2. I worked on our proprietary Game Engine by optimizing performance,
-				fixing rendering bugs, and improving graphical fidelity.
-			</p>
-			<p class="about-content">
-				I have also developed my own personal engine projects, including a Vulkan Game Engine for Linux and a D3D12 Renderer 
-				that supports real-time ray-traced global illumination.
-			</p>
-		</div>
-		<iframe class="vultr-demo" allow="fullscreen"
-			src="https://www.youtube.com/embed/1yMxUSfSMFU?autoplay=1&mute=1&loop=1">
-		</iframe>
-	</section>
+		<a target="_blank" rel="noopener noreferrer" class="experience-url" href="mailto:brandon.shihabi@gmail.com">brandon.shihabi@gmail.com</a>
+	</div>
+	<div class="about-container">
+		<p class="about-content">
+			Hi, my name is Brandon Shihabi! I'm a Software Engineer specializing in low-level programming, particularly Game Engines and Rendering.
+			I am currently studying Computer Science and Engineering at UCLA and have professional experience working on AAA Games and Graphics tech.
+		</p>
+		<p class="about-content">
+			This summer, I worked as the Core Rendering Intern at <a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://insomniac.games/">Insomniac Games</a> 
+			working on Wolverine and other Insomniac titles. I worked on our proprietary game engine developing new mesh shading pipelines from scratch for the PS5. I also helped the
+			team ship Marvel's Spider-Man 2 in the summer of 2023 working on performance optimizations and bug fixes to help get the game ready for gold and reviewer patch.
+			
+		</p>
+		<p class="about-content">
+			I also worked at <a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.apple.com/">Apple</a> on the Metal Ecosystems Team working with
+			external game developers looking to port their games and engines to the Apple platform. I worked with the Metal graphics API and helped move pre-existing MoltenVk backends
+			using Vulkan to use Metal backends. I also optimized performance for the M1's <a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://developer.apple.com/documentation/metal/tailor_your_apps_for_apple_gpus_and_tile-based_deferred_rendering">TBDR</a> GPU architecture
+		</p>
+		<p class="about-content">
+			In my spare time I have developed my own personal engine projects, including a Vulkan Game Engine for Linux and a D3D12 Renderer 
+			that supports real-time ray-traced global illumination.
+		</p>
+	</div>
+	<iframe class="vultr-demo" allow="fullscreen"
+		src="https://www.youtube.com/embed/1yMxUSfSMFU?autoplay=1&mute=1&loop=1">
+	</iframe>
+</section>
 
-	<section id="experience" class="experience">
-		<h1 class="section-header">EXPERIENCE</h1>
-		<div class="experience-container">
-			<img src="res/spiderman_2.gif" class="demo-gif" />
-			<div class="experience-description-container">
-				<h1 class="experience-header">Insomniac Games | Core Rendering Intern</h1>
-				<h2 class="experience-subheader">JUN. 2023 - SEP. 2023 | Managed by 
-					<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.linkedin.com/in/alex-hastings-6572878">Al Hastings (Chief Engine Architect/Co-Founder)</a>
-				</h1>
-				<p class="experience-description">
-					I worked on the core rendering team to help maintain and improve our proprietary Game Engine on 
-					<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://insomniac.games/game/marvels-spider-man-2/">Marvel's Spider-Man 2</a>.
-					I collaborated with the rest of our rendering team to deliver essential fixes and improvements to ship gold and reviewer patch. I also worked closely 
-					with other departments, such as environment and lighting, to diagnose rendering bugs those teams encountered and improve graphics.
-				</p>
-				<p class="experience-description">
-					I diagnosed bottlenecks of various rendering systems and optimized performance to reduce GPU starvation, increase wavefront occupancy, and move more work to 
-					async compute. I also worked to diagnose bugs specific to our PS5 graphics context and command buffer submission scheme and improved graphical fidelity in
-					many different areas throughout the open world.
-				</p>
-			</div>
+<section id="experience" class="experience">
+	<h1 class="section-header">EXPERIENCE</h1>
+	<div class="experience-container">
+		<img src="res/wolverine.gif" class="demo-gif" />
+		<div class="experience-description-container">
+			<h1 class="experience-header">Insomniac Games | Core Rendering Intern</h1>
+			<h2 class="experience-subheader">JUN. 2024 - SEP. 2024 | Managed by 
+				<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.linkedin.com/in/alex-hastings-6572878">Al Hastings (Chief Engine Architect/Co-Founder)</a>
+			</h1>
+			<p class="experience-description">
+				I worked on the core rendering team to develop and implement new mesh shading technologies on 
+				<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://insomniac.games/game/marvels-wolverine/">Marvel's Wolverine</a> and 
+				other unnannounced titles. Previously, our engine did not have any support for any mesh shaders. I developed and integrated, from scratch, a mesh shading pipeline
+				with real-time decompression of meshlet buffers and custom per meshlet culling solutions to improve performance and reduce memory usage and bandwidth. I added support
+				in material pipelines to compile mesh shader versions of all existing materials and implemented APIs in our graphics context to support mesh shading dispatches on both
+				PS5 and PC. I also implemented fallback support for GPUs which do not support mesh shaders using emulation with comparable performance.
+			</p>
 		</div>
-		<div class="experience-container">
-			<img src="res/rhombus_et1.gif" class="demo-gif" />
-			<div class="experience-description-container">
-				<h1 class="experience-header">Rhombus Systems | Firmware Engineer</h1>
-				<h2 class="experience-subheader">JUN. 2021 - SEP. 2022 | Managed by 
-					<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.linkedin.com/in/andrew-gallatin-986800125/">Drew Gallatin (Director of Engineering)</a>
-				</h1>
-				<p class="experience-description">
-					<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.rhombus.com/">Rhombus Systems</a>
-					is an enterprise security camera startup focused on a cloud-based platform. They provide AI services to help monitor 
-					video streams automatically.
-				</p>
-				<p class="experience-description">
-					We often found that many of the same issues would always occur on-site when installing our
-					cameras, mainly related to firewall issues. I led the design of a new device that would test for issues over a
-					PoE connection and show the user what tests, if any, failed. This device ran a custom firmware I built based on
-					Linux. I designed an in-house graphics driver to show the UI on the LCD display and ran a suite of tests to
-					check for connectivity, MITM attacks, and more.
-				</p>
-			</div>
+	</div>
+	<div class="experience-container">
+		<img src="res/apple.jpg" class="demo-gif" />
+		<div class="experience-description-container">
+			<h1 class="experience-header">Apple | Graphics/GPU Software Intern</h1>
+			<h2 class="experience-subheader">FEB. 2024 - JUN. 2024 | Managed by 
+				<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.linkedin.com/in/joshdoss/">Josh Doss</a>
+			</h1>
+			<p class="experience-description">
+				Worked on the Metal Ecosystems team helping the <a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://godotengine.org/">Godot</a> 
+				game engine port to a Metal backend. I profiled the engine to find performance hot-spots/bottlenecks for improvement and figured out solutions to adapt
+				to the TBDR architecture on Apple platforms. I also optimized existing NUMA patterns in engines (such as using staging buffers) to better support UMA.
+			</p>
+
+			<p class="experience-description">
+				To support HDR on Apple platforms and respond to the luminance headroom, I developed a real-time approximation of the ACES tone-mapping curve which takes in a max
+				luminance parameter and creates a tone mapping curve responding to the output headroom and adjusting the shoulder of the curve. And since Godot has no support for HDR
+				in the engine at all, I implemented a from scratch HDR 10 implementation for the Metal backend with a PQ transfer function and proper Rec. 2020 color space conversion.
+			</p>
 		</div>
-	</section>
-	<section id="projects" class="experience">
-		<h1 class="section-header">PROJECTS</h1>
-		<div class="experience-container">
-			<img src="res/realtime_gi.gif" class="demo-gif" />
-			<div class="experience-description-container">
-				<h1 class="experience-header">D3D12 Renderer</h1>
-				<h2 class="experience-subheader">FEB. 2023 - PRESENT</h1>
-				<div class="experience-link-container">
-					<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://www.youtube.com/watch?v=05GTN8YapZE">Demo</a>
-					<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://github.com/Bricktheworld/AthenaCore">Github</a>
-				</div>
-				<p class="experience-description">
-					Athena is my personal experimental renderer that I use to explore the boundaries of graphics. It is built directly off of
-					D3D12 and takes advantage of many of the next-generation features that the API provides. A render-graph abstraction is used to
-					declare render passes with all resource-transitions and synchronizations handled by the graphics context. It also takes
-					full advantage of bindless descriptors using Shader Model 6.6. The renderer uses a deferred shading model and real-time
-					ray-tracing to implement dynamic diffuse global illumination using light probes. The demo shown is running at 60 FPS on
-					a 3050ti laptop with <1 ms dedicated to dynamic global illumination.
-				</p>
-			</div>
+	</div>
+	<div class="experience-container">
+		<img src="res/spiderman_2.gif" class="demo-gif" />
+		<div class="experience-description-container">
+			<h1 class="experience-header">Insomniac Games | Core Rendering Intern</h1>
+			<h2 class="experience-subheader">JUN. 2023 - SEP. 2023 | Managed by 
+				<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.linkedin.com/in/alex-hastings-6572878">Al Hastings (Chief Engine Architect/Co-Founder)</a>
+			</h1>
+			<p class="experience-description">
+				I worked on the core rendering team to help maintain and improve our proprietary Game Engine on 
+				<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://insomniac.games/game/marvels-spider-man-2/">Marvel's Spider-Man 2</a>.
+				I collaborated with the rest of our rendering team to deliver essential fixes and improvements to ship gold and reviewer patch. I also worked closely 
+				with other departments, such as environment and lighting, to diagnose rendering bugs those teams encountered and improve graphics.
+			</p>
+			<p class="experience-description">
+				I diagnosed bottlenecks of various rendering systems and optimized performance to reduce GPU starvation, increase wavefront occupancy, and move more work to 
+				async compute. I also worked to diagnose bugs specific to our PS5 graphics context and command buffer submission scheme and improved graphical fidelity in
+				many different areas throughout the open world.
+			</p>
 		</div>
-		<div class="experience-container">
-			<img src="res/vultr_demo.gif" class="demo-gif" />
-			<div class="experience-description-container">
-				<h1 class="experience-header">Vulkan Game Engine</h1>
-				<h2 class="experience-subheader">OCT. 2021 - OCT. 2022</h1>
-				<div class="experience-link-container">
-					<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://www.youtube.com/watch?v=cie9Fgr2ft8">Demo</a>
-					<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://github.com/Bricktheworld/VultrCore">Github</a>
-					<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://github.com/Bricktheworld/VultrCore/blob/master/README.md">Writeup</a>
-				</div>
-				<p class="experience-description">
-					Vultr is a custom 3D Game Engine I built from scratch for Linux with a Vulkan rendering backend. I designed an editor for 
-					the engine using ImGui that supports editing materials, assets, the entity hierarchy, levels, and exposed gameplay structs using
-					my own macro-based runtime type reflection. All changes in the editor are serialized and deserialized into a YAML format
-					on save. The engine uses my own ECS architecture and supports hot-reloading gameplay code through DLLs (including changes to
-					component structs), optimized asset imports into a custom runtime file format, and a complete material system that works with
-					custom shaders. The engine can render PBR graphics supporting roughness, metalness, normal, and albedo textures. The meshes,
-					textures, shaders, and all other assets are loaded using separate thread submission queues to maximize performance. It also uses a
-					minimal subset of the C++ STL, opting for a custom template library where possible.
-				</p>
-			</div>
+	</div>
+	<div class="experience-container">
+		<img src="res/rhombus_et1.gif" class="demo-gif" />
+		<div class="experience-description-container">
+			<h1 class="experience-header">Rhombus Systems | Firmware Engineer</h1>
+			<h2 class="experience-subheader">JUN. 2021 - SEP. 2022 | Managed by 
+				<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.linkedin.com/in/andrew-gallatin-986800125/">Drew Gallatin (Director of Engineering)</a>
+			</h1>
+			<p class="experience-description">
+				<a target="_blank" rel="noopener noreferrer" class="paragraph-url" href="https://www.rhombus.com/">Rhombus Systems</a>
+				is an enterprise security camera startup focused on a cloud-based platform. They provide AI services to help monitor 
+				video streams automatically.
+			</p>
+			<p class="experience-description">
+				We often found that many of the same issues would always occur on-site when installing our
+				cameras, mainly related to firewall issues. I led the design of a new device that would test for issues over a
+				PoE connection and show the user what tests, if any, failed. This device ran a custom firmware I built based on
+				Linux. I designed an in-house graphics driver to show the UI on the LCD display and ran a suite of tests to
+				check for connectivity, MITM attacks, and more.
+			</p>
 		</div>
-		<div class="experience-container">
-			<img src="res/bluebubbles.gif" class="demo-gif" />
-			<div class="experience-description-container">
-				<h1 class="experience-header">BlueBubbles - iMessage on Android and Windows</h1>
-				<h2 class="experience-subheader">APR. 2020 - DEC. 2020</h1>
-				<div class="experience-link-container">
-					<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://www.youtube.com/watch?v=LDRuWXGOu0U&t=30s">Demo</a>
-					<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://github.com/BlueBubblesApp">Github</a>
-					<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://bluebubbles.app">Website</a>
-				</div>
-				<p class="experience-description">
-					BlueBubbles is an iMessage solution for Android, Linux, and Windows that allows you to send and receive Apple
-					iMessage texts from non-Apple devices. I started this open-source project in 2020 with some other developers,
-					and the app now has over 11,000 active users. I worked on the Android client and designed the Flutter app to
-					communicate with our Mac server. The video playing above was created (voluntarily, we did not ask) by the YouTube
-					channel HowToMen to showcase our app and has over 350k views.
-				</p>
+	</div>
+</section>
+<section id="projects" class="experience">
+	<h1 class="section-header">PROJECTS</h1>
+	<div class="experience-container">
+		<img src="res/realtime_gi.gif" class="demo-gif" />
+		<div class="experience-description-container">
+			<h1 class="experience-header">D3D12 Renderer</h1>
+			<h2 class="experience-subheader">FEB. 2023 - PRESENT</h1>
+			<div class="experience-link-container">
+				<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://www.youtube.com/watch?v=05GTN8YapZE">Demo</a>
+				<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://github.com/Bricktheworld/AthenaCore">Github</a>
 			</div>
+			<p class="experience-description">
+				Athena is my personal experimental renderer that I use to explore the boundaries of graphics. It is built directly off of
+				D3D12 and takes advantage of many of the next-generation features that the API provides. A render-graph abstraction is used to
+				declare render passes with all resource-transitions and synchronizations handled by the graphics context. It also takes
+				full advantage of bindless descriptors using Shader Model 6.6. The renderer uses a deferred shading model and real-time
+				ray-tracing to implement dynamic diffuse global illumination using light probes. The demo shown is running at 60 FPS on
+				a 3050ti laptop with <1 ms dedicated to dynamic global illumination.
+			</p>
 		</div>
-	</section>
+	</div>
+	<div class="experience-container">
+		<img src="res/vultr_demo.gif" class="demo-gif" />
+		<div class="experience-description-container">
+			<h1 class="experience-header">Vulkan Game Engine</h1>
+			<h2 class="experience-subheader">OCT. 2021 - OCT. 2022</h1>
+			<div class="experience-link-container">
+				<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://www.youtube.com/watch?v=cie9Fgr2ft8">Demo</a>
+				<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://github.com/Bricktheworld/VultrCore">Github</a>
+				<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://github.com/Bricktheworld/VultrCore/blob/master/README.md">Writeup</a>
+			</div>
+			<p class="experience-description">
+				Vultr is a custom 3D Game Engine I built from scratch for Linux with a Vulkan rendering backend. I designed an editor for 
+				the engine using ImGui that supports editing materials, assets, the entity hierarchy, levels, and exposed gameplay structs using
+				my own macro-based runtime type reflection. All changes in the editor are serialized and deserialized into a YAML format
+				on save. The engine uses my own ECS architecture and supports hot-reloading gameplay code through DLLs (including changes to
+				component structs), optimized asset imports into a custom runtime file format, and a complete material system that works with
+				custom shaders. The engine can render PBR graphics supporting roughness, metalness, normal, and albedo textures. The meshes,
+				textures, shaders, and all other assets are loaded using separate thread submission queues to maximize performance. It also uses a
+				minimal subset of the C++ STL, opting for a custom template library where possible.
+			</p>
+		</div>
+	</div>
+	<div class="experience-container">
+		<img src="res/bluebubbles.gif" class="demo-gif" />
+		<div class="experience-description-container">
+			<h1 class="experience-header">BlueBubbles - iMessage on Android and Windows</h1>
+			<h2 class="experience-subheader">APR. 2020 - DEC. 2020</h1>
+			<div class="experience-link-container">
+				<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://www.youtube.com/watch?v=LDRuWXGOu0U&t=30s">Demo</a>
+				<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://github.com/BlueBubblesApp">Github</a>
+				<a target="_blank" rel="noopener noreferrer" class="experience-url" href="https://bluebubbles.app">Website</a>
+			</div>
+			<p class="experience-description">
+				BlueBubbles is an iMessage solution for Android, Linux, and Windows that allows you to send and receive Apple
+				iMessage texts from non-Apple devices. I started this open-source project in 2020 with some other developers,
+				and the app now has over 11,000 active users. I worked on the Android client and designed the Flutter app to
+				communicate with our Mac server. The video playing above was created (voluntarily, we did not ask) by the YouTube
+				channel HowToMen to showcase our app and has over 350k views.
+			</p>
+		</div>
+	</div>
+</section>
 </body>
 
 </html>
