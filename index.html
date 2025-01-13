@@ -164,8 +164,9 @@
 				D3D12 and takes advantage of many of the next-generation features that the API provides. A render-graph abstraction is used to
 				declare render passes with all resource-transitions and synchronizations handled by the graphics context. It also takes
 				full advantage of bindless descriptors using Shader Model 6.6. The renderer uses a deferred shading model and real-time
-				ray-tracing to implement dynamic diffuse global illumination using light probes. The demo shown is running at 60 FPS on
-				a 3050ti laptop with <1 ms dedicated to dynamic global illumination.
+				ray-tracing to implement dynamic diffuse global illumination using light probes. It also features temporal anti-aliasing and
+				depth of field effects. Assets are loaded using a multi-threaded asset streaming system and utilize Direct Storage to copy
+				directly to the GPU.
 			</p>
 		</div>
 	</div>
